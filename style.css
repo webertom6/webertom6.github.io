@@ -1,54 +1,67 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F5F5F5;
 }
 
 header {
-    background-color: #007BFF;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #F5F5F5;
 }
 
-.header-content {
+nav {
     display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: #F5F5F5;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    border-radius: 10%;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    padding: 50px;
+}
+
+.content {
+    flex: 1;
+}
+
+.photo {
+    margin-left: 20px;
+}
+
+.contact {
+    display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
 }
 
-.profile-img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-main {
-    padding: 20px;
-}
-
-h2 {
-    color: #007BFF;
-}
-
-section {
-    background-color: white;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.photo img {
+    height: 200px;
+    width: 160px;
+    border-radius: 10px;
 }
 
 footer {
     background-color: #333;
-    color: white;
+    color: #F5F5F5;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 5px 0;
+    font-size: 0.8em;
 }
