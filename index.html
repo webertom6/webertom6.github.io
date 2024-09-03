@@ -4,36 +4,51 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tom Weber's Portfolio</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     </head>
 <body>
     <header>
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./works.html">Works</a>
-        </nav>
+        <link rel="stylesheet" href="./css/style_header.css">
+        <div class="header">
+            <a href="index.html" class="logo">Tom Weber</a>
+            <div class="header-right">
+                <a href="index.html">Home</a>
+                <a href="works.html">Works</a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <div class="content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hello! I'm Tom Weber, a passionate software developer with a love for creating elegant solutions to complex problems. Feel free to browse through my works and get in touch if you'd like to collaborate!</p>
+        <div class="content-photo-wrapper">
+            <div class="content">
+                <h1>Welcome</h1>
+                <h2>Electrical engineering student in Neuromorphic </h2>
+                <p>The areas that I'm most interested in are artificial intelligence (AI, ML, DL), computer vision, signal processing and integration into embedded systems. Optimising these fields using bio-inspired technologies could have some benefits (consumption or performance) for any application.</p>
+            </div>
+            <div class="photo">
+                <img src="image/id_zoom_recad.png" alt="Profile Photo" height="200">
+            </div>
         </div>
-        <div class="photo">
-            <img src="./image/id_zoom_recad.png" alt="Tom Weber">
-        </div>
-        
+
+        <h2>Contact Me</h2>
         <div class="contact">
-            <h2>Contact</h2>
-            <p>Email:
+            <a href="mailto:w.tom0405@gmail.com">
+                <img src="./image/email_icon.png" alt="Email" height="50">
+            </a>
+            <a href="https://www.linkedin.com/in/tom--weber">
+                <img src="./image/linkedin_icon.png" alt="LinkedIn" height="50">
+            </a>
+            <a href="https://github.com/webertom6">
+                <img src="./image/github_icon.png" alt="GitHub" height="50">
+            </a>
         </div>
     </main>
 
-
     <footer>
+        <link rel="stylesheet" href="./css/style_footer.css">
         <p>© Copyright 2024 Tom Weber. Hosted by GitHub Pages.</p>
     </footer>
 </body>
