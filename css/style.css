@@ -20,6 +20,7 @@ main {
     padding: 50px;
 }
 
+/* index.html */
 .content-photo-wrapper {
     display: flex;
     flex-direction: column;
@@ -63,3 +64,44 @@ main {
     gap: 20px;
 }
 
+/* works.html */
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* overflow is used to hide the content that overflows the container */
+    overflow: hidden;
+    /* margin between project cards */
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column; /* Stack header on top of body */
+}
+
+.card-header {
+    font-weight: bold;
+    font-size: 1.25rem;
+    background: #f4f4f4;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    font-family: 'Roboto Mono', monospace;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.card-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* Responsive adjustment: Stack columns on mobile */
+@media (max-width: 768px) {
+    .card-body {
+        grid-template-columns: 1fr;
+    }
+}

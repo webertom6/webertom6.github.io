@@ -3,31 +3,73 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tom Weber's Portfolio</title>
+        <title>Tom Weber | Electrical Engineer | Neuromorphic processing | Robotics</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style_header.css">
+        <link rel="stylesheet" href="./css/style_footer.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     </head>
 <body>
-    <header>
-        <link rel="stylesheet" href="./css/style_header.css">
-        <div class="header">
-            <a href="index.html" class="logo">Tom Weber</a>
-            <div class="header-right">
-                <a href="index.html">Home</a>
-                <a href="works.html">Works</a>
-            </div>
-        </div>
-    </header>
+    <div id="header-placeholder"></div>
 
     <main>
-        <h1>Work in progress ...</h1>    
+        <article class="project-card">
+            <div class="card-header">
+                <h3>Identification Chessboard Computer Vision</h3>
+            </div>
+            <div class="card-body">
+                <div class="card-left">
+                    <p class="description">
+                        Vision system for chessboard recognition, projection, segmentation and classification of pieces.
+                    </p>
+                    <div class="tech-stack">
+                        <ul>
+                            <li>Near real-time analysis on video</li>
+                            <li>Custom YOLO model trained</li>
+                            <li>Application of computer vision algorithm (Hough, Morphological operation)</li>
+                            <li>Technology used: OpenCV, Python, ultralytics YOLOv11</li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/webertom6/computer-vison-chessboard" class="btn">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="card-right">
+                    <img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true" alt="STM32 Project">
+                </div>
+            </div>
+        </article>
+        <article class="project-card">
+            <div class="card-header">
+                <h3>Identification Chessboard Computer Vision</h3>
+            </div>
+            <div class="card-body">
+                <div class="card-left">
+                    <p class="description">A solution capable of retrieving the name of each chess piece on a board at a given position and replacing it in augmented reality.</p>
+                    <div class="tech-stack">
+                        <ul>
+                            <li>Custom trainedYOLOv11</li>
+                            <li>OpenCV</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/webertom6/computer-vison-chessboard" class="btn">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="card-right">
+                    <img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true" alt="STM32 Project">
+                </div>
+            </div>
+        </article>
+
     </main>
 
-    <footer>
-        <link rel="stylesheet" href="./css/style_footer.css">
-        <p>© Copyright 2024 Tom Weber. Hosted by GitHub Pages.</p>
-    </footer>
+    <div id="footer-placeholder"></div>
+
+    <script src="./js/main.js">
+    </script>
 </body>
 </html>
