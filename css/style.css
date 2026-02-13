@@ -1,7 +1,10 @@
 body {
     font-family: 'Courier New', Courier, monospace;
+    /* margin is used to remove the default margin */
     margin: 0;
+    /* padding is used to remove the default padding */
     padding: 0;
+    /* display is used to create a flex container 1D layout */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -11,13 +14,17 @@ body {
 main {
     display: flex;
     flex-direction: column;
+    /* flex 1 is used to make the main content take up the remaining space */
     flex: 1;
+    /* padding is used to create space around the content */
     padding: 50px;
 }
 
 .content-photo-wrapper {
     display: flex;
+    flex-direction: column;
     width: 100%;
+    gap: 20px;
 }
 
 .content {
@@ -25,7 +32,26 @@ main {
 }
 
 .photo {
-    margin-left: 20px;
+    /* space next to text */
+    margin-left: 0;
+    /* max-width is used to prevent the image from being too large */
+    max-width: 100%;
+    /* height is set to auto to maintain the aspect ratio */
+    height: auto;
+    /* center the image */
+    display: block;
+    margin: 0 auto;
+}
+
+/* change the layout for larger screens */
+@media (min-width: 768px) {
+    .content-photo-wrapper {
+        flex-direction: row;
+    }
+    
+    .photo {
+        margin-left: 20px;
+    }
 }
 
 .photo img {
@@ -34,8 +60,6 @@ main {
 
 .contact {
     display: flex;
-    flex: 1;
-    flex-direction: row;
-    align-items: left;
+    gap: 20px;
 }
 
