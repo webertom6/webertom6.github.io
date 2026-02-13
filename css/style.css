@@ -17,7 +17,7 @@ main {
     /* flex 1 is used to make the main content take up the remaining space */
     flex: 1;
     /* padding is used to create space around the content */
-    padding: 50px;
+    padding: 25px;
 }
 
 /* index.html */
@@ -64,32 +64,63 @@ main {
     gap: 20px;
 }
 
+/* Slideshow */
 .slideshow-container {
     position: relative;
-    max-width: 1000px;
+    max-width: 1024px;
     margin: auto;
     overflow: hidden;
+    padding: 5px;
 }
 
 .slide { display: none; } /* Hidden by default */
 
-.prev, .next {
+.prev {
     cursor: pointer;
     position: absolute;
     top: 50%;
+    left: 0;
     padding: 16px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0);
     transition: 0.3s;
+    border-radius: 10px;
 }
 
-.prev:hover, .next:hover { background-color: rgba(0,0,0,0.5); color: white; }
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.prev:hover, .next:hover { 
+    background-color: rgba(0,0,0,0.5); 
+    color: white; 
+    border-radius: 10px;
+}
+
+.dots-container {
+    /* center the dots at middle of slideshow-container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .dot {
+    /* size of the dots */
     height: 12px;
     width: 12px;
+    /* margin between  and between the dots */
     margin: 0 5px;
+    /* border and shape of the dots */
     border: 2px solid #bbb;
+    /* border-radius is used to make the dots circular */
     border-radius: 50%;
+    /* display is used to make the dots inline-block */
     display: inline-block;
 }
 
@@ -146,7 +177,6 @@ main {
     }
 }
 
-/* slideshow */
 /* Smooth SVG Entrance */
 .project-logo {
     width: 50px;

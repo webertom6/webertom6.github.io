@@ -46,11 +46,82 @@
                 <img src="./assets/icons/github.svg" alt="GitHub" height="50">
             </a>
         </div>
+
+    <section class="slideshow-container">
+        <div class="slides-wrapper">
+            <div class="slide fade"> 
+                <article class="project-card-1">
+                    <div class="card-header">
+                        <h3>Identification Chessboard Computer Vision</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-left">
+                            <p class="description">
+                                Vision system for chessboard recognition, projection, segmentation and classification of pieces.
+                            </p>
+                            <div class="tech-stack">
+                                <ul>
+                                    <li>Near real-time analysis on video</li>
+                                    <li>Custom YOLO model trained</li>
+                                    <li>Application of computer vision algorithm (Hough, Morphological operation)</li>
+                                    <li>Technology used: OpenCV, Python, ultralytics YOLOv11</li>
+                                </ul>
+                            </div>
+                            <div class="links">
+                                <a href="https://github.com/webertom6/computer-vison-chessboard" class="btn">View on GitHub</a>
+                            </div>
+                        </div>
+                        <div class="card-right">
+                            <img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true" alt="STM32 Project">
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="slide fade"> 
+                <article class="project-card-1">
+                    <div class="card-header">
+                        <h3>Scene understanding with different architectures (ConvNet, DenseNet, ResNet, ViT)</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-left">
+                            <p class="description">
+                                A deep learning project implementing state-of-the-art architectures for scene classification, aimed at enabling robots to understand and adapt to their environments.                    </p>
+                            <div class="tech-stack">
+                                <ul>
+                                    <li>Custom trainedYOLOv11</li>
+                                    <li>OpenCV</li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="links">
+                                <a href="https://github.com/webertom6/computer-vison-chessboard" class="btn">View on GitHub</a>
+                            </div>
+                        </div>
+                        <div class="card-right">
+                             <img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true" alt="STM32 Project">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+         <!--&#10094; value : arrow ASCII CHARACTER -->
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
     </main>
+
 
     <div id="footer-placeholder"></div>
 
-    <script src="./js/main.js">
-    </script>
+    <script src="./js/main.js"></script>
+    <script src="./js/slideshow.js"></script>
 </body>
 </html>
