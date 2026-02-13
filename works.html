@@ -15,7 +15,7 @@
     <div id="header-placeholder"></div>
 
     <main>
-        <article class="project-card">
+        <article class="project-card-1">
             <div class="card-header">
                 <h3>Identification Chessboard Computer Vision</h3>
             </div>
@@ -37,31 +37,91 @@
                     </div>
                 </div>
                 <div class="card-right">
-                    <img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true" alt="STM32 Project">
+                    <img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true" alt="Chessboard YOLO prediction">
                 </div>
             </div>
         </article>
-        <article class="project-card">
+        <article class="project-card-1">
             <div class="card-header">
-                <h3>Identification Chessboard Computer Vision</h3>
+                <h3>Wattwise : MLOps on forecasting renewable energy</h3>
             </div>
             <div class="card-body">
                 <div class="card-left">
-                    <p class="description">A solution capable of retrieving the name of each chess piece on a board at a given position and replacing it in augmented reality.</p>
+                    <p class="description">
+                        A full-stack MLOps solution to forecast energy consumption and weather-related variables across European countries using machine learning. This project integrates automated model training and deployment using Google Cloud Platform. This was developped using a GitFlow approach.
+                    </p>
                     <div class="tech-stack">
                         <ul>
-                            <li>Custom trainedYOLOv11</li>
-                            <li>OpenCV</li>
-                            <li></li>
+                            <li>Retrieve and update environmental dataset using API.</li>
+                            <li>ML pipeline ingests energy and meteorological data for training, monitoring and predictions.</li>
+                            <li>CI/CD to quality and functionality of project.</li>
+                            <li>Technology Used : VertexAI, API, Google Cloud.</li>
                         </ul>
                     </div>
                     <div class="links">
-                        <a href="https://github.com/webertom6/computer-vison-chessboard" class="btn">View on GitHub</a>
+                        <a href="https://github.com/webertom6/wattwise-mlops" class="btn">View on GitHub</a>
                     </div>
                 </div>
                 <div class="card-right">
-                    <img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true" alt="STM32 Project">
+                    <img src="https://github.com/webertom6/wattwise-mlops/blob/main/img/vertex_ai_pipeline.png?raw=true" alt="Vertex AI Pipeline">
                 </div>
+            </div>
+        </article>
+        <article class="project-card-1">
+            <div class="card-header">
+                <h3>fMRI artifacts detection</h3>
+            </div>
+            <div class="card-body">
+                <div class="card-left">
+                    <p class="description">
+                        Automatic tool detect problematic volumes in a series of images from functional MRI sequences
+                    </p>
+                    <div class="tech-stack">
+                        <ul>
+                            <li>For each volume, compute max z-score of slice-to-slice differences.</li>
+                            <li>Compute slice-wise temporal z-score consistency for each volume.</li>
+                            <li>Get an adaptative threshold for artifact detection based on clean volumes.</li>
+                            <li>Statistical analysis of detected artifacts.</li>
+                            <li>Technology Used : MRIcron, Python.</li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/webertom6/medical-imaging" class="btn">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="card-right">
+                    <img src="https://github.com/webertom6/medical-imaging/blob/main/image/164.png?raw=true" alt="fMRI Artifacts Detection">
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card-2">
+            <header class="card-top">
+                <img src="./assets/icons/github.svg" class="project-logo" alt="Logo">
+                <h3>Identification Chessboard Computer Vision</h3>
+                <div class="links"> [GitHub] [Demo] </div>
+            </header>
+            
+            <div class="card-info">
+                <p>
+                    Vision system for chessboard recognition, projection, segmentation and classification of pieces.
+                </p>
+                <p class="techs">
+                    <ul>
+                        <li>Near real-time analysis on video</li>
+                        <li>Custom YOLO model trained</li>
+                        <li>Application of computer vision algorithm (Hough, Morphological operation)</li>
+                        <li>Technology used: OpenCV, Python, ultralytics YOLOv11</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="project-grid">
+                <div class="grid-item"><img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/stickers_color_overlay.png?raw=true" alt="Step 1"></div>
+                <div class="grid-item"><img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true" alt="Step 2"></div>
+                <div class="grid-item"><img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/warped_seg.png?raw=true" alt="Step 3"></div>
+                <div class="grid-item"><img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/exclude_white_black_frame.png?raw=true" alt="Step 4"></div>
+                <div class="grid-item"><img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/chessboard_cleaning_examples.png?raw=true" alt="Step 5"></div>
             </div>
         </article>
 
