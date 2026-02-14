@@ -67,7 +67,7 @@ main {
 /* Slideshow */
 .slideshow-container {
     position: relative;
-    max-width: 1024px;
+    max-width: 1400px;
     margin: auto;
     overflow: hidden;
     padding: 5px;
@@ -128,6 +128,7 @@ main {
 
 /* works.html */
 .project-card-1, .project-card-2 {
+    max-width: 1400px;
     border: 1px solid #ddd;
     border-radius: 8px;
     /* overflow is used to hide the content that overflows the container */
@@ -135,7 +136,10 @@ main {
     /* margin between project cards */
     margin-bottom: 2rem;
     display: flex;
-    flex-direction: column; /* Stack header on top of body */
+    /* Stack header on top of body */
+    flex-direction: column; 
+    /* center  the article*/
+    margin: auto;
 }
 
 .card-header {
@@ -171,7 +175,7 @@ main {
 }
 
 /* Responsive adjustment: Stack columns on mobile */
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
     .card-body {
         grid-template-columns: 1fr;
     }
@@ -192,7 +196,7 @@ main {
 .project-grid {
     display: grid;
     /* Parameter: max numbers of elements per row (e.g., 4) */
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* max-width: 300px; */
     gap: 10px;
     justify-content: center; /* Centers items in the row */
