@@ -10,90 +10,19 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <script src="./js/fct.js"></script>
     </head>
 <body>
     <div id="header-placeholder"></div>
 
     <main>
-        <article class="project-card-1">
-            <div class="card-header">
-                <h3>Identification Chessboard Computer Vision</h3>
-            </div>
-            <div class="card-body">
-                <div class="card-left">
-                    <p class="description">
-                        Vision system for chessboard recognition, projection, segmentation and classification of pieces.
-                    </p>
-                    <div class="tech-stack">
-                        <ul>
-                            <li>Near real-time analysis on video</li>
-                            <li>Custom YOLO model trained</li>
-                            <li>Application of computer vision algorithm (Hough, Morphological operation)</li>
-                            <li>Technology used: OpenCV, Python, ultralytics YOLOv11</li>
-                        </ul>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/webertom6/computer-vison-chessboard" class="btn">View on GitHub</a>
-                    </div>
-                </div>
-                <div class="card-right">
-                    <img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true" alt="Chessboard YOLO prediction">
-                </div>
-            </div>
-        </article>
-        <article class="project-card-1">
-            <div class="card-header">
-                <h3>Wattwise : MLOps on forecasting renewable energy</h3>
-            </div>
-            <div class="card-body">
-                <div class="card-left">
-                    <p class="description">
-                        A full-stack MLOps solution to forecast energy consumption and weather-related variables across European countries using machine learning. This project integrates automated model training and deployment using Google Cloud Platform. This was developped using a GitFlow approach.
-                    </p>
-                    <div class="tech-stack">
-                        <ul>
-                            <li>Retrieve and update environmental dataset using API.</li>
-                            <li>ML pipeline ingests energy and meteorological data for training, monitoring and predictions.</li>
-                            <li>CI/CD to quality and functionality of project.</li>
-                            <li>Technology Used : VertexAI, API, Google Cloud.</li>
-                        </ul>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/webertom6/wattwise-mlops" class="btn">View on GitHub</a>
-                    </div>
-                </div>
-                <div class="card-right">
-                    <img src="https://github.com/webertom6/wattwise-mlops/blob/main/img/vertex_ai_pipeline.png?raw=true" alt="Vertex AI Pipeline">
-                </div>
-            </div>
-        </article>
-        <article class="project-card-1">
-            <div class="card-header">
-                <h3>fMRI artifacts detection</h3>
-            </div>
-            <div class="card-body">
-                <div class="card-left">
-                    <p class="description">
-                        Automatic tool detect problematic volumes in a series of images from functional MRI sequences
-                    </p>
-                    <div class="tech-stack">
-                        <ul>
-                            <li>For each volume, compute max z-score of slice-to-slice differences.</li>
-                            <li>Compute slice-wise temporal z-score consistency for each volume.</li>
-                            <li>Get an adaptative threshold for artifact detection based on clean volumes.</li>
-                            <li>Statistical analysis of detected artifacts.</li>
-                            <li>Technology Used : MRIcron, Python.</li>
-                        </ul>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/webertom6/medical-imaging" class="btn">View on GitHub</a>
-                    </div>
-                </div>
-                <div class="card-right">
-                    <img src="https://github.com/webertom6/medical-imaging/blob/main/image/164.png?raw=true" alt="fMRI Artifacts Detection">
-                </div>
-            </div>
-        </article>
+
+        <div class="project-container-cv1"></div>
+
+
+        <div class="project-container-mlops"></div>
+        
+        <div class="project-container-med-imaging"></div>
 
         <article class="project-card-2">
             <header class="card-top">
@@ -131,5 +60,67 @@
 
     <script src="./js/main.js">
     </script>
+
+    <script>
+
+        const project_cv1 = {
+                title: "Identification Chessboard Computer Vision",
+                description: "Vision system for chessboard recognition, projection, segmentation and classification of pieces.",
+                link: "https://github.com/webertom6/computer-vison-chessboard",
+                techs_list: ["Near real-time analysis on video", 
+                            "Custom YOLO model trained", 
+                            "Application of computer vision algorithm (Hough, Morphological operation)", 
+                            "Technology used: OpenCV, Python, ultralytics YOLOv11"],
+                image: {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        }
+            };
+
+        const project_mlops = {
+                title: "Wattwise : MLOps on forecasting renewable energy",
+                description: "A full-stack MLOps solution to forecast energy consumption and weather-related variables across European countries using machine learning. This project integrates automated model training and deployment using Google Cloud Platform. This was developped using a GitFlow approach.",
+                link: "https://github.com/webertom6/wattwise-mlops",
+                techs_list: ["Retrieve and update environmental dataset using API.", 
+                            "ML pipeline ingests energy and meteorological data for training, monitoring and predictions.", 
+                            "CI/CD to quality and functionality of project.", 
+                            "Technology Used : VertexAI, API, Google Cloud."],
+                image: {"url": "https://github.com/webertom6/wattwise-mlops/blob/main/img/vertex_ai_pipeline.png?raw=true", 
+                        "alt": "Vertex AI Pipeline"
+                        }
+            };
+
+        const project_med_imaging = {
+                title: "fMRI artifacts detection",
+                description: "Automatic tool detect problematic volumes in a series of images from functional MRI sequences",
+                link: "https://github.com/webertom6/medical-imaging",
+                techs_list: ["For each volume, compute max z-score of slice-to-slice differences.", 
+                            "Compute slice-wise temporal z-score consistency for each volume.", 
+                            "Get an adaptative threshold for artifact detection based on clean volumes.", 
+                            "Statistical analysis of detected artifacts.", 
+                            "Technology Used : MRIcron, Python."],
+                image: {"url": "https://github.com/webertom6/medical-imaging/blob/main/image/164.png?raw=true", 
+                        "alt": "fMRI Artifacts Detection"
+                        }
+            };
+
+        const dict_projects = new Map();
+        dict_projects.set("project-container-cv1", project_cv1);
+        dict_projects.set("project-container-mlops", project_mlops);
+        dict_projects.set("project-container-med-imaging", project_med_imaging);
+
+        const containers = document.querySelectorAll('[class*="project-container"]');
+
+        for (let i = 0; i < containers.length; i++) {
+            if (dict_projects.has(containers[i].className)) {
+                const project_data = dict_projects.get(containers[i].className);
+                const project_card_html = createProjectCard1(project_data);
+                containers[i].innerHTML = project_card_html;
+            } else {
+                console.warn(`No project data found for container with class: ${containers[i].className}`);
+            }
+
+        }
+
+            </script>
 </body>
 </html>
