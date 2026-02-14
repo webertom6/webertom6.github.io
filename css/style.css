@@ -12,12 +12,15 @@ body {
 }
 
 main {
+    max-width: 1400px;
     display: flex;
     flex-direction: column;
     /* flex 1 is used to make the main content take up the remaining space */
     flex: 1;
     /* padding is used to create space around the content */
     padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* index.html */
@@ -67,7 +70,6 @@ main {
 /* Slideshow */
 .slideshow-container {
     position: relative;
-    max-width: 1400px;
     margin: auto;
     overflow: hidden;
     padding: 5px;
@@ -128,7 +130,6 @@ main {
 
 /* works.html */
 .project-card-1, .project-card-2 {
-    max-width: 1400px;
     border: 1px solid #ddd;
     border-radius: 8px;
     /* overflow is used to hide the content that overflows the container */
@@ -139,7 +140,7 @@ main {
     /* Stack header on top of body */
     flex-direction: column; 
     /* center  the article*/
-    margin: auto;
+    /* margin: auto; */
 }
 
 .card-header {

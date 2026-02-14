@@ -5,12 +5,16 @@ header {
 }
 
 .header {
-    overflow: hidden;
-    background-color: #f1f1f1;
-    border-radius: 15px;
-    padding: 20px 10px;
-    margin: 15px;
-  }
+  max-width: 1400px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  padding: 20px 10px;
+  margin: 15px;
+  /* center the header */
+  margin-left: auto;
+  margin-right: auto;
+}
   
 .header a {
   float: left;
