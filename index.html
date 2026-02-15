@@ -15,37 +15,37 @@
     <div id="header-placeholder"></div>
     
     <main>
-        <div class="content-photo-wrapper">
-            <div class="content">
-                <h1>Welcome</h1>
-                <h2> Electrical Engineer  
-                    <ul>
-                        <li> Specialized in Neuromorphic Engineering </li>
-                        <li> ULiège's University, Belgium </li>
-                        <li> Signal processing and intelligent robotics </li>
-                        
-                    </ul>
-                </h2> 
+    <div class="content-photo-wrapper">
+        <div class="content">
+            <h1>Welcome</h1>
+            <h2> Electrical Engineer  
+                <ul>
+                    <li> Specialized in Neuromorphic Engineering </li>
+                    <li> ULiège's University, Belgium </li>
+                    <li> Signal processing and intelligent robotics </li>
+                    
+                </ul>
+            </h2> 
 
-            </div>
-            <div class="photo">
-                <img src="https://avatars.githubusercontent.com/u/174884821" alt="Profile Photo" height="200">
-            </div>
         </div>
-        <p>The areas that I'm most interested in are artificial intelligence (AI, ML, DL), computer vision, signal processing and integration into embedded systems. Optimising these fields using bio-inspired technologies could have some benefits (consumption or performance) for any application.</p>
-        
-        <h2>Contact Me</h2>
-        <div class="contact">
-            <a href="mailto:w.tom0405@gmail.com">
-                <img src="./assets/icons/email.svg" alt="Email" height="50">
-            </a>
-            <a href="https://www.linkedin.com/in/tom--weber">
-                <img src="./assets/icons/linkedin.svg" alt="LinkedIn" height="50">
-            </a>
-            <a href="https://github.com/webertom6">
-                <img src="./assets/icons/github.svg" alt="GitHub" height="50">
-            </a>
+        <div class="photo">
+            <img src="https://avatars.githubusercontent.com/u/174884821" alt="Profile Photo" height="200">
         </div>
+    </div>
+    <p>The areas that I'm most interested in are artificial intelligence (AI, ML, DL), computer vision, signal processing and integration into embedded systems. Optimising these fields using bio-inspired technologies could have some benefits (consumption or performance) for any application.</p>
+    
+    <h2>Contact Me</h2>
+    <div class="contact">
+        <a href="mailto:w.tom0405@gmail.com">
+            <img src="./assets/icons/email.svg" alt="Email" height="50">
+        </a>
+        <a href="https://www.linkedin.com/in/tom--weber">
+            <img src="./assets/icons/linkedin.svg" alt="LinkedIn" height="50">
+        </a>
+        <a href="https://github.com/webertom6">
+            <img src="./assets/icons/github.svg" alt="GitHub" height="50">
+        </a>
+    </div>
 
     <section class="slideshow-container">
         <div class="slides-wrapper">
@@ -86,20 +86,52 @@
                         <div class="card-left">
                             <p class="description">
                                 A deep learning project implementing state-of-the-art architectures for scene classification, aimed at enabling robots to understand and adapt to their environments.                    </p>
-                            <div class="tech-stack">
-                                <ul>
-                                    <li>Custom trainedYOLOv11</li>
-                                    <li>OpenCV</li>
-                                    <li></li>
-                                </ul>
+                                <div class="tech-stack">
+                                    <ul>
+                                        <li>Custom trainedYOLOv11</li>
+                                        <li>OpenCV</li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="links">
+                                    <a href="https://github.com/webertom6/computer-vison-chessboard" class="btn">View on GitHub</a>
+                                </div>
                             </div>
-                            <div class="links">
-                                <a href="https://github.com/webertom6/computer-vison-chessboard" class="btn">View on GitHub</a>
+                            <div class="card-right">
+                                <img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true" alt="STM32 Project">
                             </div>
                         </div>
-                        <div class="card-right">
-                             <img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true" alt="STM32 Project">
+                    </article>
+                </div>
+            <div class="slide fade"> 
+                <article class="project-card-2">
+                    <div class="card-header">
+                        <img src="./assets/icons/github.svg" class="project-logo" alt="Logo">
+                        <h3>Doom-like Raycasting FPGA</h3>
+                        <div class="links"> 
+                            [<a href="https://github.com/webertom6/doom-raycast-fpga" target="_blank">GitHub repo</a>]
+                            | 
+                            [<a href="https://github.com/webertom6/doom-raycast-fpga/blob/main/report/doom.gif" target="_blank">Demo</a>]
                         </div>
+                    </div>
+                    
+                    <div class="card-info">
+                        <p>
+                            FPGA implementation of retro-like FPV (First Person View) game with 2D dynamics but with a 3D rendering using ray casting engine like in the video game Wolfenstein3D.
+                        </p>
+                        <p class="techs">
+                            <ul>
+                                <li>Real time rendering with smooth graphics.</li>
+                                <li>Compressed RBG images for limited ROM.</li>
+                                <li>Technology Used: VHDL, Quartus, DE0-Nano (Cyclone® IV FPGA).</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="project-grid">
+                        <div class="grid-item"><img src="./assets/images/demo_doom.webp" alt="Demo doom raycast fpga"></div>
+                        <div class="grid-item"><img src="./assets/images/DE0-Nano_layout_top.webp" alt="DE0-Nano Layout Top"></div>
+                        <div class="grid-item"><img src="https://github.com/webertom6/doom-raycast-fpga/blob/main/report/table_compression.png?raw=true" alt="Table Image Compression"></div>
                     </div>
                 </article>
             </div>
@@ -113,6 +145,7 @@
         <div class="dot-container">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </section>
 
