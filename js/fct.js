@@ -5,7 +5,11 @@ function createProjectCard1(project_data) {
     return `
         <article class="project-card-1">
             <div class="card-header">
+                <img src="./assets/icons/github.svg" class="project-logo" alt="Logo">
                 <h3>${project_data.title}</h3>
+                <div class="links">
+                    [<a href="${project_data.link}" target="_blank">GitHub repo</a>]
+                </div>
             </div>
             <div class="card-body">
                 <div class="card-left">
@@ -14,9 +18,6 @@ function createProjectCard1(project_data) {
                         <ul>
                             ${tech_html}
                         </ul>
-                    </div>
-                    <div class="links">
-                        <a href="${project_data.link}" class="btn" target="_blank">View on GitHub</a>
                     </div>
                 </div>
                 <div class="card-right">

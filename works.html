@@ -25,32 +25,33 @@
         <div class="project-container-med-imaging"></div>
 
         <article class="project-card-2">
-            <header class="card-top">
+            <div class="card-header">
                 <img src="./assets/icons/github.svg" class="project-logo" alt="Logo">
-                <h3>Identification Chessboard Computer Vision</h3>
-                <div class="links"> [GitHub] [Demo] </div>
-            </header>
+                <h3>Doom-like Raycasting FPGA</h3>
+                <div class="links"> 
+                    [<a href="https://github.com/webertom6/doom-raycast-fpga" target="_blank">GitHub repo</a>]
+                    | 
+                    [<a href="https://github.com/webertom6/doom-raycast-fpga/blob/main/report/doom.gif" target="_blank">Demo</a>]
+                </div>
+            </div>
             
             <div class="card-info">
                 <p>
-                    Vision system for chessboard recognition, projection, segmentation and classification of pieces.
+                    FPGA implementation of retro-like FPV (First Person View) game with 2D dynamics but with a 3D rendering using ray casting engine like in the video game Wolfenstein3D.
                 </p>
                 <p class="techs">
                     <ul>
-                        <li>Near real-time analysis on video</li>
-                        <li>Custom YOLO model trained</li>
-                        <li>Application of computer vision algorithm (Hough, Morphological operation)</li>
-                        <li>Technology used: OpenCV, Python, ultralytics YOLOv11</li>
+                        <li>Real time rendering with smooth graphics.</li>
+                        <li>Compressed RBG images for limited ROM.</li>
+                        <li>Technology Used: VHDL, Quartus, DE0-Nano (Cyclone® IV FPGA).</li>
                     </ul>
                 </p>
             </div>
 
             <div class="project-grid">
-                <div class="grid-item"><img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/stickers_color_overlay.png?raw=true" alt="Step 1"></div>
-                <div class="grid-item"><img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true" alt="Step 2"></div>
-                <div class="grid-item"><img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/warped_seg.png?raw=true" alt="Step 3"></div>
-                <div class="grid-item"><img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/exclude_white_black_frame.png?raw=true" alt="Step 4"></div>
-                <div class="grid-item"><img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/chessboard_cleaning_examples.png?raw=true" alt="Step 5"></div>
+                <div class="grid-item"><img src="./assets/images/demo_doom.webp" alt="Step 1"></div>
+                <div class="grid-item"><img src="./assets/images/DE0-Nano_layout_top.webp" alt="Step 2"></div>
+                <div class="grid-item"><img src="https://github.com/webertom6/doom-raycast-fpga/blob/main/report/table_compression.png?raw=true" alt="Step 4"></div>
             </div>
         </article>
 

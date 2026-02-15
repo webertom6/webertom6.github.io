@@ -12,7 +12,7 @@ body {
 }
 
 main {
-    max-width: 1400px;
+    max-width: 1300px;
     display: flex;
     flex-direction: column;
     /* flex 1 is used to make the main content take up the remaining space */
@@ -146,15 +146,22 @@ main {
 .card-header {
     font-weight: bold;
     font-size: 1.25rem;
+
     background: #f4f4f4;
     padding: 1rem;
     border-bottom: 1px solid #ddd;
+
+    display: flex;    
+    gap: 15px;
+    align-items: center;
 }
 
 .card-body {
     font-family: 'Roboto Mono', monospace;
     font-size: larger;
     display: grid;
+    text-align: left;
+    align-items: center;
     grid-template-columns: 2fr 1fr; /* 2/3 and 1/3 equal columns */
     gap: 1.5rem;
     padding: 1rem;
@@ -184,8 +191,8 @@ main {
 
 /* Smooth SVG Entrance */
 .project-logo {
-    width: 50px;
-    animation: fadeIn 1.2s ease-out;
+    width: 35px;
+    animation: fadeIn 2.5s ease-out;
 }
 
 @keyframes fadeIn {
@@ -193,20 +200,26 @@ main {
     to { opacity: 1; transform: translateY(0); }
 }
 
+.card-info {
+    font-family: 'Roboto Mono', monospace;
+    font-size: larger;
+    text-align: left;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
 /* The Grid Gallery */
 .project-grid {
-    display: grid;
-    /* Parameter: max numbers of elements per row (e.g., 4) */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* max-width: 300px; */
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    justify-content: center; /* Centers items in the row */
+    justify-content: center;
+    margin: auto;
 }
 
 .grid-item img {
     padding: 10px;
-    width: 100%;
-    aspect-ratio: 1 / 1; /* Keeps them as consistent squares */
-    object-fit: cover; /* Ensures images fill the grid item without distortion */
-    /* object-fit: contain; */
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
 }

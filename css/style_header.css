@@ -1,5 +1,6 @@
 header {
   background-color: #00103fdc;
+  /* top and bottom padding are 10px, left and right padding are 20px */
   padding: 10px 20px;
   color: #F5F5F5;
 }
