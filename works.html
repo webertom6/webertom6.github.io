@@ -23,8 +23,10 @@
         <div class="project-container-cv2"></div>
 
         <div class="project-container-mlops"></div>
-
+        
         <div class="project-container-protobot"></div>
+
+        <div class="project-container-dl"></div>
 
         <div class="project-container-signal-generator"></div>
 
@@ -200,6 +202,30 @@
                         ]
             };
 
+        const project_DL = {
+                title: "Deep-Learning scene classification",
+                description: "Scene understanding with different deep-learning architectures (ConvNet, DenseNet, ResNet, ViT).",
+                link: "https://github.com/webertom6/deep-learning",
+                techs_list: ["Evaluation of models for image classification.", 
+                            "Improving training efficiency by focusing on broader scene categories more relevant to real-world applications like cathedral, church, abbey, ... = monument.", 
+                            "Visualization of ViT attention maps.", 
+                            "Technology Used : PyTorch, WandB."],
+                image: [
+                        {"url": "https://github.com/webertom6/deep-learning/blob/main/report/images/IntelImage_accuracy.png?raw=true", 
+                        "alt": "Intel Image Accuracy"
+                        },
+                        {"url": "https://github.com/webertom6/deep-learning/blob/main/report/images/205_error_church.png?raw=true", 
+                        "alt": "Error Church"
+                        },
+                        {"url": "https://github.com/webertom6/deep-learning/blob/main/report/images/img_attn_street.png?raw=true", 
+                        "alt": "Attention Map Street"
+                        },
+                        {"url": "https://github.com/webertom6/deep-learning/blob/main/report/images/map_attn_street.png?raw=true", 
+                        "alt": "Attention Map Street"
+                        },
+                        ]
+            };
+
 
         const dict_projects = new Map();
         dict_projects.set("project-container-cv1", [project_cv1, 1]);
@@ -211,6 +237,7 @@
         dict_projects.set("project-container-protobot", [project_protobot, 1]);
         dict_projects.set("project-container-signal-generator", [project_signal_generator, 2]);
         dict_projects.set("project-container-gamegridapp", [project_gamegridapp, 2]);
+        dict_projects.set("project-container-dl", [project_DL, 2]);
 
         const containers = document.querySelectorAll('[class*="project-container"]');
 
