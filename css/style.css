@@ -23,7 +23,11 @@ main {
     margin-right: auto;
 }
 
-/* index.html */
+/*
+=====================
+    index.html 
+=====================
+*/
 .content-photo-wrapper {
     display: flex;
     flex-direction: column;
@@ -67,7 +71,11 @@ main {
     gap: 20px;
 }
 
-/* Slideshow */
+/*
+=====================
+    Slisdeshow
+=====================
+*/
 .slideshow-container {
     position: relative;
     margin: auto;
@@ -128,7 +136,11 @@ main {
 
 .dot.active { background-color: #717171; }
 
-/* works.html */
+/*
+=====================
+    works.html
+=====================
+*/
 .project-card-1, .project-card-2 {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -162,7 +174,7 @@ main {
     display: grid;
     text-align: left;
     align-items: center;
-    grid-template-columns: 2fr 1fr; /* 2/3 and 1/3 equal columns */
+    grid-template-columns: 3fr 2fr; /* 2/3 and 1/3 equal columns */
     gap: 1.5rem;
     padding: 1rem;
 }
@@ -214,6 +226,7 @@ main {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    align-items: center;
     margin: auto;
 }
 
@@ -222,4 +235,70 @@ main {
     max-width: 500px;
     height: auto;
     object-fit: contain;
+}
+
+/*
+=====================
+    about.html - Courses
+=====================
+*/
+.courses-section {
+    width: 100%;
+}
+
+.courses-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 3px solid rgb(20, 89, 158);
+    display: inline-block;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .courses-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.course-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-left: 4px solid rgb(20, 89, 158);
+    border-radius: 6px;
+    padding: 10px 14px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.course-card:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+.course-code {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 0.85rem;
+    background: #00103f18;
+    color: rgb(20, 89, 158);
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    margin-right: 12px;
+    min-width: 110px;
+    text-align: center;
+}
+
+.course-name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.95rem;
+    color: #333;
 }

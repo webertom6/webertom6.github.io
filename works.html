@@ -17,43 +17,22 @@
 
     <main>
 
-        <div class="project-container-cv1"></div>
-
+        <div class="project-container-fpga-raycast"></div>
+        
+        <!-- <div class="project-container-cv1"></div> -->
+        <div class="project-container-cv2"></div>
 
         <div class="project-container-mlops"></div>
+
+        <div class="project-container-protobot"></div>
+
+        <div class="project-container-signal-generator"></div>
+
+        <div class="project-container-gamegridapp"></div>
         
         <div class="project-container-med-imaging"></div>
 
-        <article class="project-card-2">
-            <div class="card-header">
-                <img src="./assets/icons/github.svg" class="project-logo" alt="Logo">
-                <h3>Doom-like Raycasting FPGA</h3>
-                <div class="links"> 
-                    [<a href="https://github.com/webertom6/doom-raycast-fpga" target="_blank">GitHub repo</a>]
-                    | 
-                    [<a href="https://github.com/webertom6/doom-raycast-fpga/blob/main/report/doom.gif" target="_blank">Demo</a>]
-                </div>
-            </div>
-            
-            <div class="card-info">
-                <p>
-                    FPGA implementation of retro-like FPV (First Person View) game with 2D dynamics but with a 3D rendering using ray casting engine like in the video game Wolfenstein3D.
-                </p>
-                <p class="techs">
-                    <ul>
-                        <li>Real time rendering with smooth graphics.</li>
-                        <li>Compressed RBG images for limited ROM.</li>
-                        <li>Technology Used: VHDL, Quartus, DE0-Nano (Cyclone® IV FPGA).</li>
-                    </ul>
-                </p>
-            </div>
-
-            <div class="project-grid">
-                <div class="grid-item"><img src="./assets/images/demo_doom.webp" alt="Demo doom raycast fpga"></div>
-                <div class="grid-item"><img src="./assets/images/DE0-Nano_layout_top.webp" alt="DE0-Nano Layout Top"></div>
-                <div class="grid-item"><img src="https://github.com/webertom6/doom-raycast-fpga/blob/main/report/table_compression.png?raw=true" alt="Table Image Compression"></div>
-            </div>
-        </article>
+        <div class="project-container-database-store-management"></div>
 
     </main>
 
@@ -75,6 +54,36 @@
                 image: {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true", 
                         "alt": "Chessboard Computer Vision"
                         }
+            };
+
+        const project_cv2 = {
+                title: "Identification Chessboard Computer Vision",
+                description: "Vision system for chessboard recognition, projection, segmentation and classification of pieces.",
+                link: "https://github.com/webertom6/computer-vison-chessboard",
+                techs_list: ["Near real-time analysis on video", 
+                            "Custom YOLO model trained", 
+                            "Application of computer vision algorithm (Hough, Morphological operation)", 
+                            "Technology used: OpenCV, Python, ultralytics YOLOv11"],
+                image: [
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/stickers_color_overlay.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/stickers_hsv_overlay.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/warped_seg.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/exclude_white_black_frame.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/chessboard_cleaning_examples.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        ]
             };
 
         const project_mlops = {
@@ -104,17 +113,120 @@
                         }
             };
 
+        const project_fpga_raycast = {
+                title: "Doom-like Raycasting FPGA",
+                description: "FPGA implementation of retro-like FPV (First Person View) game with 2D dynamics but with a 3D rendering using ray casting engine like in the video game Wolfenstein3D.",
+                link: "https://github.com/webertom6/doom-like-raycasting-fpga",
+                techs_list: ["Real time rendering with smooth graphics.", 
+                            "Compressed RBG images for limited ROM.", 
+                            "Technology Used: VHDL, Quartus, DE0-Nano (Cyclone® IV FPGA)."],
+                image: [
+                        {"url": "./assets/images/demo_doom.webp", 
+                        "alt": "Demo doom raycast fpga"
+                        },
+                        {"url": "./assets/images/DE0-Nano_layout_top.webp", 
+                        "alt": "DE0-Nano Layout Top"
+                        },
+                        {"url": "https://github.com/webertom6/doom-raycast-fpga/blob/main/report/table_compression.png?raw=true", 
+                        "alt": "Table Image Compression"
+                        }
+                        ]
+            };
+
+        const project_database_store_management = {
+            title: "WeND(Y)'s : Database for Store Management",
+            description: "Website and database management for WeND(Y)'s Party Management System, a small party and event planning business.",
+            link: "https://github.com/webertom6/database-store-management",
+            techs_list: ["Management of stocks and planning using a web interface.", 
+                        "Implementation and interaction with a relational database using PHP and SQL.", 
+                        "Technology Used : PHP, SQL, JavaScript, HTML, CSS."],
+            image: {"url": "https://github.com/webertom6/database-store-management/blob/main/demo.gif?raw=true", 
+                    "alt": "Database Store Management Demo"
+                    }
+            };
+
+        const project_protobot = {
+            title: "Protobot: Autonomous Obstacle-Avoiding Car",
+            description: "The team (Florent Boxus, Alex Rousseau, Anes Skrijelj, Maxime Temoschenko, Tom Weber) designed and built Protobot, a mobile robot capable of navigating autonomously while avoiding obstacles and dead ends. The robot interprets sensor data to adapt its path dynamically, using a finite state machine and PI control loops to manage motor speed and direction.",
+            link: "https://github.com/webertom6/pi-protobot",
+            techs_list: ["Programming of PIC controller in Assembly language.", 
+                        "Implementation of interrupt-driven architecture and round-robin scheduling.", 
+                        "Design and soldering of a custom PCB.", 
+                        "Integration of sensors (ultrasonic, photomicrosensors) and actuators (DC motors).", 
+                        "Technology Used : Assembly, MPLabs, KiCAD."],
+            image: {"url": "https://github.com/webertom6/pi-protobot/blob/main/video/demo_protobot.gif?raw=true", 
+                    "alt": "Protobot Demo"
+                    }
+            };
+
+        const project_signal_generator = {
+                title: "Signal Generator",
+                description: "A compact signal generator (sinus, triangle, square) with tunable frequency project implemented in C with a custom PCB.",
+                link: "https://github.com/webertom6/applied-elec",
+                techs_list: ["Design and soldering of a custom PCB.", 
+                            "Programming of micro controller.", 
+                            "Technology Used : KiCad, Micro Soldering, STM32CubeIDE, SPI communication."],
+                image: [
+                        {"url": "https://github.com/webertom6/applied-elec/blob/main/demo/pcb_3D.png?raw=true", 
+                        "alt": "PCB layout 3D"
+                        },
+                        {"url": "https://github.com/webertom6/applied-elec/blob/main/demo/demo.gif?raw=true", 
+                        "alt": "Signal Generator Demo"
+                        },
+                        ]
+            };
+
+        const project_gamegridapp = {
+                title: "GameGridApp - Modulatory GUI template for board games",
+                description: "Modulatory GUI template for board games playing with tiles. The goal was to design a game GUI which can be adapted by just switching the assets and how the TILES interact with each other and let the \"engine\" do the rest. Utopic goal from a 2nd year engineer student but was fun to build and apply course material OOP, concurrency, UI and AI",
+                link: "https://github.com/webertom6/GameGridApp",
+                techs_list: [
+                "Compliance of object-oriented programming principles for modularity, readability, simplicity, portability and reusability.",
+                "Mob system with A* pathfinding algorithm.", 
+                "Multithreading for concurrent execution of game logic and user interface.",
+                "Graphical user interface (GUI) with Java Swing, including a main menu, game board, and dynamic tile interactions.",
+                "Resizable UI with dynamic scaling of window panels.",
+                "Sound effects and tunable background music.",
+                            "Technology Used : "],
+                image: [
+                        {
+                        "url": "https://github.com/user-attachments/assets/f1bf356d-7020-45c5-ba04-eb39c7c76237", 
+                        "alt": "Video demo of GameGridApp showing a pathfinding mob navigating a grid-based game board with dynamic tile interactions and sound effects." 
+                        },
+                        {
+                        "url": "https://github.com/webertom6/GameGridApp/blob/main/src/be/weber/sokoban/report/diagram_gamegridapp_puml.svg?raw=true", 
+                        "alt": "GameGridApp OOP (object oriented programming) relationships diagram" 
+                        }
+                        ]
+            };
+
+
         const dict_projects = new Map();
-        dict_projects.set("project-container-cv1", project_cv1);
-        dict_projects.set("project-container-mlops", project_mlops);
-        dict_projects.set("project-container-med-imaging", project_med_imaging);
+        dict_projects.set("project-container-cv1", [project_cv1, 1]);
+        dict_projects.set("project-container-cv2", [project_cv2, 2]);
+        dict_projects.set("project-container-mlops", [project_mlops, 1]);
+        dict_projects.set("project-container-med-imaging", [project_med_imaging, 1]);
+        dict_projects.set("project-container-fpga-raycast", [project_fpga_raycast, 2]);
+        dict_projects.set("project-container-database-store-management", [project_database_store_management, 1]);
+        dict_projects.set("project-container-protobot", [project_protobot, 1]);
+        dict_projects.set("project-container-signal-generator", [project_signal_generator, 2]);
+        dict_projects.set("project-container-gamegridapp", [project_gamegridapp, 2]);
 
         const containers = document.querySelectorAll('[class*="project-container"]');
 
         for (let i = 0; i < containers.length; i++) {
             if (dict_projects.has(containers[i].className)) {
-                const project_data = dict_projects.get(containers[i].className);
-                const project_card_html = createProjectCard1(project_data);
+                const [project_data, card_type] = dict_projects.get(containers[i].className);
+                let project_card_html = ``;
+                if (card_type === 1) {
+                    project_card_html = createProjectCard1(project_data);
+                } 
+                else if (card_type === 2) {
+                    project_card_html = createProjectCard2(project_data);
+                }
+                else {
+                    console.warn(`Unknown card type for container with class: ${containers[i].className}`);
+                }
                 containers[i].innerHTML = project_card_html;
             } else {
                 console.warn(`No project data found for container with class: ${containers[i].className}`);
@@ -122,6 +234,6 @@
 
         }
 
-            </script>
+    </script>
 </body>
 </html>

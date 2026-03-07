@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <script src="./js/fct.js"></script>
     </head>
 <body>
     <div id="header-placeholder"></div>
@@ -47,93 +48,15 @@
         </a>
     </div>
 
+    <h2 class="courses-title">Top projects</h2>
+
     <section class="slideshow-container">
         <div class="slides-wrapper">
             <div class="slide fade"> 
-                <article class="project-card-1">
-                    <div class="card-header">
-                        <h3>Identification Chessboard Computer Vision</h3>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-left">
-                            <p class="description">
-                                Vision system for chessboard recognition, projection, segmentation and classification of pieces.
-                            </p>
-                            <div class="tech-stack">
-                                <ul>
-                                    <li>Near real-time analysis on video</li>
-                                    <li>Custom YOLO model trained</li>
-                                    <li>Application of computer vision algorithm (Hough, Morphological operation)</li>
-                                    <li>Technology used: OpenCV, Python, ultralytics YOLOv11</li>
-                                </ul>
-                            </div>
-                            <div class="links">
-                                <a href="https://github.com/webertom6/computer-vison-chessboard" class="btn">View on GitHub</a>
-                            </div>
-                        </div>
-                        <div class="card-right">
-                            <img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true" alt="STM32 Project">
-                        </div>
-                    </div>
-                </article>
+                <div class="project-container-fpga-raycast"></div>
             </div>
             <div class="slide fade"> 
-                <article class="project-card-1">
-                    <div class="card-header">
-                        <h3>Scene understanding with different architectures (ConvNet, DenseNet, ResNet, ViT)</h3>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-left">
-                            <p class="description">
-                                A deep learning project implementing state-of-the-art architectures for scene classification, aimed at enabling robots to understand and adapt to their environments.                    </p>
-                                <div class="tech-stack">
-                                    <ul>
-                                        <li>Custom trainedYOLOv11</li>
-                                        <li>OpenCV</li>
-                                        <li></li>
-                                    </ul>
-                                </div>
-                                <div class="links">
-                                    <a href="https://github.com/webertom6/computer-vison-chessboard" class="btn">View on GitHub</a>
-                                </div>
-                            </div>
-                            <div class="card-right">
-                                <img src="https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true" alt="STM32 Project">
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            <div class="slide fade"> 
-                <article class="project-card-2">
-                    <div class="card-header">
-                        <img src="./assets/icons/github.svg" class="project-logo" alt="Logo">
-                        <h3>Doom-like Raycasting FPGA</h3>
-                        <div class="links"> 
-                            [<a href="https://github.com/webertom6/doom-raycast-fpga" target="_blank">GitHub repo</a>]
-                            | 
-                            [<a href="https://github.com/webertom6/doom-raycast-fpga/blob/main/report/doom.gif" target="_blank">Demo</a>]
-                        </div>
-                    </div>
-                    
-                    <div class="card-info">
-                        <p>
-                            FPGA implementation of retro-like FPV (First Person View) game with 2D dynamics but with a 3D rendering using ray casting engine like in the video game Wolfenstein3D.
-                        </p>
-                        <p class="techs">
-                            <ul>
-                                <li>Real time rendering with smooth graphics.</li>
-                                <li>Compressed RBG images for limited ROM.</li>
-                                <li>Technology Used: VHDL, Quartus, DE0-Nano (Cyclone® IV FPGA).</li>
-                            </ul>
-                        </p>
-                    </div>
-
-                    <div class="project-grid">
-                        <div class="grid-item"><img src="./assets/images/demo_doom.webp" alt="Demo doom raycast fpga"></div>
-                        <div class="grid-item"><img src="./assets/images/DE0-Nano_layout_top.webp" alt="DE0-Nano Layout Top"></div>
-                        <div class="grid-item"><img src="https://github.com/webertom6/doom-raycast-fpga/blob/main/report/table_compression.png?raw=true" alt="Table Image Compression"></div>
-                    </div>
-                </article>
+                <div class="project-container-cv2"></div>   
             </div>
         </div>
 
@@ -145,7 +68,6 @@
         <div class="dot-container">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </section>
 
@@ -156,5 +78,87 @@
 
     <script src="./js/main.js"></script>
     <script src="./js/slideshow.js"></script>
+
+    <script>
+
+        const project_cv2 = {
+                title: "Identification Chessboard Computer Vision",
+                description: "Vision system for chessboard recognition, projection, segmentation and classification of pieces.",
+                link: "https://github.com/webertom6/computer-vison-chessboard",
+                techs_list: ["Near real-time analysis on video", 
+                            "Custom YOLO model trained", 
+                            "Application of computer vision algorithm (Hough, Morphological operation)", 
+                            "Technology used: OpenCV, Python, ultralytics YOLOv11"],
+                image: [
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/stickers_color_overlay.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/stickers_hsv_overlay.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/warped_seg.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/exclude_white_black_frame.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/chessboard_cleaning_examples.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        ]
+            };
+
+        const project_fpga_raycast = {
+                title: "Doom-like Raycasting FPGA",
+                description: "FPGA implementation of retro-like FPV (First Person View) game with 2D dynamics but with a 3D rendering using ray casting engine like in the video game Wolfenstein3D.",
+                link: "https://github.com/webertom6/doom-like-raycasting-fpga",
+                techs_list: ["Real time rendering with smooth graphics.", 
+                            "Compressed RBG images for limited ROM.", 
+                            "Technology Used: VHDL, Quartus, DE0-Nano (Cyclone® IV FPGA)."],
+                image: [
+                        {"url": "./assets/images/demo_doom.webp", 
+                        "alt": "Demo doom raycast fpga"
+                        },
+                        {"url": "./assets/images/DE0-Nano_layout_top.webp", 
+                        "alt": "DE0-Nano Layout Top"
+                        },
+                        {"url": "https://github.com/webertom6/doom-raycast-fpga/blob/main/report/table_compression.png?raw=true", 
+                        "alt": "Table Image Compression"
+                        }
+                        ]
+            };
+
+
+        const dict_projects = new Map();
+        dict_projects.set("project-container-cv2", [project_cv2, 2]);
+        dict_projects.set("project-container-fpga-raycast", [project_fpga_raycast, 2]);
+
+
+        const containers = document.querySelectorAll('[class*="project-container"]');
+
+        for (let i = 0; i < containers.length; i++) {
+            if (dict_projects.has(containers[i].className)) {
+                const [project_data, card_type] = dict_projects.get(containers[i].className);
+                let project_card_html = ``;
+                if (card_type === 1) {
+                    project_card_html = createProjectCard1(project_data);
+                } 
+                else if (card_type === 2) {
+                    project_card_html = createProjectCard2(project_data);
+                }
+                else {
+                    console.warn(`Unknown card type for container with class: ${containers[i].className}`);
+                }
+                containers[i].innerHTML = project_card_html;
+            } else {
+                console.warn(`No project data found for container with class: ${containers[i].className}`);
+            }
+
+        }
+
+    </script>
 </body>
 </html>
