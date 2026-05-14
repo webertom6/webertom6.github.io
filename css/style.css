@@ -1,3 +1,7 @@
+* {
+    background: rgba(128, 77, 0, 0.1);
+}
+
 body {
     font-family: 'Courier New', Courier, monospace;
     /* margin is used to remove the default margin */
@@ -12,7 +16,7 @@ body {
 }
 
 main {
-    max-width: 1300px;
+    max-width: 1400px;
     display: flex;
     flex-direction: column;
     /* flex 1 is used to make the main content take up the remaining space */
@@ -301,4 +305,98 @@ main {
     font-family: 'Nunito', sans-serif;
     font-size: 0.95rem;
     color: #333;
+}
+
+/*
+=====================
+    about.html - Tech Stack
+=====================
+*/
+.techstack-section {
+    width: 100%;
+}
+
+.techstack-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .techstack-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1100px) {
+    .techstack-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.techstack-category {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px 20px;
+    transition: box-shadow 0.2s;
+}
+
+.techstack-category:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.techstack-category-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(20, 89, 158);
+    margin: 0 0 12px 0;
+    padding-bottom: 6px;
+    border-bottom: 2px solid rgb(20, 89, 158);
+}
+
+.techstack-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.techstack-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 6px;
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.techstack-item:hover {
+    background: #f0f4fa;
+    transform: translateY(-3px);
+}
+
+.techstack-item i {
+    font-size: 2rem;
+}
+
+.techstack-item span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+    color: #333;
+    text-align: center;
+}
+
+.techstack-text-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.65rem !important;
+    font-weight: 800 !important;
+    color: #fff !important;
+    background: rgb(20, 89, 158);
+    border-radius: 6px;
 }
