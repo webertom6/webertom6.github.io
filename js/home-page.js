@@ -1,0 +1,1 @@
+renderProjectContainers(HOME_PROJECT_MAP);
