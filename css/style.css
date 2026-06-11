@@ -1,18 +1,18 @@
 * {
     box-sizing: border-box;
+    background: rgba(128, 77, 0, 0.1);
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
-    /* margin is used to remove the default margin */
+    font-family: 'Inter', 'Nunito', system-ui, -apple-system, sans-serif;
     margin: 0;
-    /* padding is used to remove the default padding */
     padding: 0;
-    /* display is used to create a flex container 1D layout */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: #F5F5F5;
+    color: #1a2433;
+    line-height: 1.6;
 }
 
 main {
