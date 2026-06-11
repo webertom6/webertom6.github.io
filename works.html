@@ -1,47 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tom Weber | Professional Project Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/premium-theme.css">
-    <link rel="stylesheet" href="./css/style_header.css">
-    <link rel="stylesheet" href="./css/style_footer.css">
-    <link rel="stylesheet" href="./css/page-works.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tom Weber | Electrical Engineer | Neuromorphic processing | Robotics</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style_header.css">
+        <link rel="stylesheet" href="./css/style_footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <script src="./js/fct.js"></script>
+    </head>
 <body>
     <div id="header-placeholder"></div>
 
-    <main class="works-page">
-        <section class="works-hero">
-            <p class="works-kicker">Selected engineering work</p>
-            <h1>Project Portfolio</h1>
-            <p class="works-intro">
-                A curated overview of projects spanning embedded systems, computer vision, deep learning, MLOps and software engineering.
-                Each project emphasizes practical implementation, measurable value and maintainable delivery.
-            </p>
-        </section>
+    <main>
 
-        <section class="works-section">
-            <h2>Featured Projects</h2>
-            <div id="featured-projects" class="projects-stack"></div>
-        </section>
+        <div class="project-container-fpga-raycast"></div>
+        
+        <!-- <div class="project-container-cv1"></div> -->
+        <div class="project-container-cv2"></div>
 
-        <section class="works-section">
-            <h2>Additional Engineering Work</h2>
-            <div id="all-projects" class="projects-stack"></div>
-        </section>
+        <div class="project-container-mlops"></div>
+        
+        <div class="project-container-protobot"></div>
+
+        <div class="project-container-dl"></div>
+
+        <div class="project-container-signal-generator"></div>
+
+        <div class="project-container-gamegridapp"></div>
+        
+        <div class="project-container-med-imaging"></div>
+
+        <div class="project-container-database-store-management"></div>
+
     </main>
 
     <div id="footer-placeholder"></div>
 
-    <script src="./js/main.js"></script>
-    <script src="./js/projects-data.js"></script>
-    <script src="./js/projects-renderer.js"></script>
-    <script src="./js/works-page.js"></script>
+    <script src="./js/main.js">
+    </script>
+
+    <script>
+
+        const project_cv1 = {
+                title: "Identification Chessboard Computer Vision",
+                description: "Vision system for chessboard recognition, projection, segmentation and classification of pieces.",
+                link: "https://github.com/webertom6/computer-vison-chessboard",
+                techs_list: ["Near real-time analysis on video", 
+                            "Custom YOLO model trained", 
+                            "Application of computer vision algorithm (Hough, Morphological operation)", 
+                            "Technology used: OpenCV, Python, ultralytics YOLOv11"],
+                image: {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        }
+            };
+
+        const project_cv2 = {
+                title: "Identification Chessboard Computer Vision",
+                description: "Vision system for chessboard recognition, projection, segmentation and classification of pieces.",
+                link: "https://github.com/webertom6/computer-vison-chessboard",
+                techs_list: ["Near real-time analysis on video", 
+                            "Custom YOLO model trained", 
+                            "Application of computer vision algorithm (Hough, Morphological operation)", 
+                            "Technology used: OpenCV, Python, ultralytics YOLOv11"],
+                image: [
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/stickers_color_overlay.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/stickers_hsv_overlay.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/warped_seg.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/exclude_white_black_frame.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/chessboard_cleaning_examples.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        ]
+            };
+
+        const project_mlops = {
+                title: "Wattwise : MLOps on forecasting renewable energy",
+                description: "A full-stack MLOps solution to forecast energy consumption and weather-related variables across European countries using machine learning. This project integrates automated model training and deployment using Google Cloud Platform. This was developped using a GitFlow approach.",
+                link: "https://github.com/webertom6/wattwise-mlops",
+                techs_list: ["Retrieve and update environmental dataset using API.", 
+                            "ML pipeline ingests energy and meteorological data for training, monitoring and predictions.", 
+                            "CI/CD to quality and functionality of project.", 
+                            "Technology Used : VertexAI, API, Google Cloud."],
+                image: {"url": "https://github.com/webertom6/wattwise-mlops/blob/main/img/vertex_ai_pipeline.png?raw=true", 
+                        "alt": "Vertex AI Pipeline"
+                        }
+            };
+
+        const project_med_imaging = {
+                title: "fMRI artifacts detection",
+                description: "Automatic tool detect problematic volumes in a series of images from functional MRI sequences",
+                link: "https://github.com/webertom6/medical-imaging",
+                techs_list: ["For each volume, compute max z-score of slice-to-slice differences.", 
+                            "Compute slice-wise temporal z-score consistency for each volume.", 
+                            "Get an adaptative threshold for artifact detection based on clean volumes.", 
+                            "Statistical analysis of detected artifacts.", 
+                            "Technology Used : MRIcron, Python."],
+                image: {"url": "https://github.com/webertom6/medical-imaging/blob/main/image/164.png?raw=true", 
+                        "alt": "fMRI Artifacts Detection"
+                        }
+            };
+
+        const project_fpga_raycast = {
+                title: "Doom-like Raycasting FPGA",
+                description: "FPGA implementation of retro-like FPV (First Person View) game with 2D dynamics but with a 3D rendering using ray casting engine like in the video game Wolfenstein3D.",
+                link: "https://github.com/webertom6/doom-like-raycasting-fpga",
+                techs_list: ["Real time rendering with smooth graphics.", 
+                            "Compressed RBG images for limited ROM.", 
+                            "Technology Used: VHDL, Quartus, DE0-Nano (Cyclone® IV FPGA)."],
+                image: [
+                        {"url": "./assets/images/demo_doom.webp", 
+                        "alt": "Demo doom raycast fpga"
+                        },
+                        {"url": "./assets/images/DE0-Nano_layout_top.webp", 
+                        "alt": "DE0-Nano Layout Top"
+                        },
+                        {"url": "https://github.com/webertom6/doom-raycast-fpga/blob/main/report/table_compression.png?raw=true", 
+                        "alt": "Table Image Compression"
+                        }
+                        ]
+            };
+
+        const project_database_store_management = {
+            title: "WeND(Y)'s : Database for Store Management",
+            description: "Website and database management for WeND(Y)'s Party Management System, a small party and event planning business.",
+            link: "https://github.com/webertom6/database-store-management",
+            techs_list: ["Management of stocks and planning using a web interface.", 
+                        "Implementation and interaction with a relational database using PHP and SQL.", 
+                        "Technology Used : PHP, SQL, JavaScript, HTML, CSS."],
+            image: {"url": "https://github.com/webertom6/database-store-management/blob/main/demo.gif?raw=true", 
+                    "alt": "Database Store Management Demo"
+                    }
+            };
+
+        const project_protobot = {
+            title: "Protobot: Autonomous Obstacle-Avoiding Car",
+            description: "The team (Florent Boxus, Alex Rousseau, Anes Skrijelj, Maxime Temoschenko, Tom Weber) designed and built Protobot, a mobile robot capable of navigating autonomously while avoiding obstacles and dead ends. The robot interprets sensor data to adapt its path dynamically, using a finite state machine and PI control loops to manage motor speed and direction.",
+            link: "https://github.com/webertom6/pi-protobot",
+            techs_list: ["Programming of PIC controller in Assembly language.", 
+                        "Implementation of interrupt-driven architecture and round-robin scheduling.", 
+                        "Design and soldering of a custom PCB.", 
+                        "Integration of sensors (ultrasonic, photomicrosensors) and actuators (DC motors).", 
+                        "Technology Used : Assembly, MPLabs, KiCAD."],
+            image: {"url": "https://github.com/webertom6/pi-protobot/blob/main/video/demo_protobot.gif?raw=true", 
+                    "alt": "Protobot Demo"
+                    }
+            };
+
+        const project_signal_generator = {
+                title: "Signal Generator",
+                description: "A compact signal generator (sinus, triangle, square) with tunable frequency project implemented in C with a custom PCB.",
+                link: "https://github.com/webertom6/applied-elec",
+                techs_list: ["Design and soldering of a custom PCB.", 
+                            "Programming of micro controller.", 
+                            "Technology Used : KiCad, Micro Soldering, STM32CubeIDE, SPI communication."],
+                image: [
+                        {"url": "https://github.com/webertom6/applied-elec/blob/main/demo/pcb_3D.png?raw=true", 
+                        "alt": "PCB layout 3D"
+                        },
+                        {"url": "https://github.com/webertom6/applied-elec/blob/main/demo/demo.gif?raw=true", 
+                        "alt": "Signal Generator Demo"
+                        },
+                        ]
+            };
+
+        const project_gamegridapp = {
+                title: "GameGridApp - Modulatory GUI template for board games",
+                description: "Modulatory GUI template for board games playing with tiles. The goal was to design a game GUI which can be adapted by just switching the assets and how the TILES interact with each other and let the \"engine\" do the rest. Utopic goal from a 2nd year engineer student but was fun to build and apply course material OOP, concurrency, UI and AI",
+                link: "https://github.com/webertom6/GameGridApp",
+                techs_list: [
+                "Compliance of object-oriented programming principles for modularity, readability, simplicity, portability and reusability.",
+                "Mob system with A* pathfinding algorithm.", 
+                "Multithreading for concurrent execution of game logic and user interface.",
+                "Graphical user interface (GUI) with Java Swing, including a main menu, game board, and dynamic tile interactions.",
+                "Resizable UI with dynamic scaling of window panels.",
+                "Sound effects and tunable background music.",
+                            "Technology Used : "],
+                image: [
+                        {
+                        "url": "https://github.com/user-attachments/assets/f1bf356d-7020-45c5-ba04-eb39c7c76237", 
+                        "alt": "Video demo of GameGridApp showing a pathfinding mob navigating a grid-based game board with dynamic tile interactions and sound effects." 
+                        },
+                        {
+                        "url": "https://github.com/webertom6/GameGridApp/blob/main/src/be/weber/sokoban/report/diagram_gamegridapp_puml.svg?raw=true", 
+                        "alt": "GameGridApp OOP (object oriented programming) relationships diagram" 
+                        }
+                        ]
+            };
+
+        const project_DL = {
+                title: "Deep-Learning scene classification",
+                description: "Scene understanding with different deep-learning architectures (ConvNet, DenseNet, ResNet, ViT).",
+                link: "https://github.com/webertom6/deep-learning",
+                techs_list: ["Evaluation of models for image classification.", 
+                            "Improving training efficiency by focusing on broader scene categories more relevant to real-world applications like cathedral, church, abbey, ... = monument.", 
+                            "Visualization of ViT attention maps.", 
+                            "Technology Used : PyTorch, WandB."],
+                image: [
+                        {"url": "https://github.com/webertom6/deep-learning/blob/main/report/images/IntelImage_accuracy.png?raw=true", 
+                        "alt": "Intel Image Accuracy"
+                        },
+                        {"url": "https://github.com/webertom6/deep-learning/blob/main/report/images/205_error_church.png?raw=true", 
+                        "alt": "Error Church"
+                        },
+                        {"url": "https://github.com/webertom6/deep-learning/blob/main/report/images/img_attn_street.png?raw=true", 
+                        "alt": "Attention Map Street"
+                        },
+                        {"url": "https://github.com/webertom6/deep-learning/blob/main/report/images/map_attn_street.png?raw=true", 
+                        "alt": "Attention Map Street"
+                        },
+                        ]
+            };
+
+
+        const dict_projects = new Map();
+        dict_projects.set("project-container-cv1", [project_cv1, 1]);
+        dict_projects.set("project-container-cv2", [project_cv2, 2]);
+        dict_projects.set("project-container-mlops", [project_mlops, 1]);
+        dict_projects.set("project-container-med-imaging", [project_med_imaging, 1]);
+        dict_projects.set("project-container-fpga-raycast", [project_fpga_raycast, 2]);
+        dict_projects.set("project-container-database-store-management", [project_database_store_management, 1]);
+        dict_projects.set("project-container-protobot", [project_protobot, 1]);
+        dict_projects.set("project-container-signal-generator", [project_signal_generator, 2]);
+        dict_projects.set("project-container-gamegridapp", [project_gamegridapp, 2]);
+        dict_projects.set("project-container-dl", [project_DL, 2]);
+
+        const containers = document.querySelectorAll('[class*="project-container"]');
+
+        for (let i = 0; i < containers.length; i++) {
+            if (dict_projects.has(containers[i].className)) {
+                const [project_data, card_type] = dict_projects.get(containers[i].className);
+                let project_card_html = ``;
+                if (card_type === 1) {
+                    project_card_html = createProjectCard1(project_data);
+                } 
+                else if (card_type === 2) {
+                    project_card_html = createProjectCard2(project_data);
+                }
+                else {
+                    console.warn(`Unknown card type for container with class: ${containers[i].className}`);
+                }
+                containers[i].innerHTML = project_card_html;
+            } else {
+                console.warn(`No project data found for container with class: ${containers[i].className}`);
+            }
+
+        }
+
+    </script>
 </body>
 </html>

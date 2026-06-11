@@ -1,118 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tom Weber | Electrical Engineer | AI, Vision & Robotics</title>
-    <meta name="description" content="Tom Weber is an electrical engineer focused on neuromorphic computing, computer vision, and embedded robotics systems.">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/premium-theme.css">
-    <link rel="stylesheet" href="./css/style_header.css">
-    <link rel="stylesheet" href="./css/style_footer.css">
-    <link rel="stylesheet" href="./css/page-home.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tom Weber | Electrical Engineer | Neuromorphic processing | Robotics</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style_header.css">
+        <link rel="stylesheet" href="./css/style_footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <script src="./js/fct.js"></script>
+    </head>
 <body>
     <div id="header-placeholder"></div>
+    
+    <main>
+    <div class="content-photo-wrapper">
+        <div class="content">
+            <h1>Welcome</h1>
+            <h2> Electrical Engineer  
+                <ul>
+                    <li> Specialized in Neuromorphic Engineering </li>
+                    <li> ULiège's University, Belgium </li>
+                    <li> Signal processing and intelligent robotics </li>
+                    
+                </ul>
+            </h2> 
 
-    <main class="home-main">
-        <section class="hero" aria-labelledby="hero-title">
-            <div class="hero__content">
-                <p class="hero__eyebrow">Electrical Engineer · ULiège</p>
-                <h1 id="hero-title">Building intelligent systems from algorithms to embedded hardware.</h1>
-                <p class="hero__summary">
-                    I design performant AI and computer vision solutions with a strong focus on robotics, signal processing,
-                    and energy-efficient implementation using bio-inspired approaches.
-                </p>
-                <div class="hero__actions">
-                    <a class="cta cta--primary" href="https://github.com/webertom6" target="_blank" rel="noopener noreferrer" aria-label="Visit Tom Weber's GitHub profile">
-                        <img src="./assets/icons/github.svg" alt="" aria-hidden="true">
-                        <span>GitHub</span>
-                    </a>
-                    <a class="cta cta--secondary" href="https://www.linkedin.com/in/tom--weber" target="_blank" rel="noopener noreferrer" aria-label="Visit Tom Weber's LinkedIn profile">
-                        <img src="./assets/icons/linkedin.svg" alt="" aria-hidden="true">
-                        <span>LinkedIn</span>
-                    </a>
-                    <a class="cta cta--ghost" href="mailto:w.tom0405@gmail.com" aria-label="Send an email to Tom Weber">
-                        <img src="./assets/icons/email.svg" alt="" aria-hidden="true">
-                        <span>Email</span>
-                    </a>
-                </div>
-            </div>
-            <div class="hero__visual">
-                <div class="profile-card">
-                    <img src="https://avatars.githubusercontent.com/u/174884821?v=4" alt="Portrait of Tom Weber">
-                    <ul class="profile-highlights">
-                        <li>Neuromorphic Engineering</li>
-                        <li>Computer Vision & Embedded AI</li>
-                        <li>Signal Processing for Robotics</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        </div>
+        <div class="photo">
+            <img src="https://avatars.githubusercontent.com/u/174884821" alt="Profile Photo" height="200">
+        </div>
+    </div>
+    <p>The areas that I'm most interested in are artificial intelligence (AI, ML, DL), computer vision, signal processing and integration into embedded systems. Optimising these fields using bio-inspired technologies could have some benefits (consumption or performance) for any application.</p>
+    
+    <h2>Contact Me</h2>
+    <div class="contact">
+        <a href="mailto:w.tom0405@gmail.com">
+            <img src="./assets/icons/email.svg" alt="Email" height="50">
+        </a>
+        <a href="https://www.linkedin.com/in/tom--weber">
+            <img src="./assets/icons/linkedin.svg" alt="LinkedIn" height="50">
+        </a>
+        <a href="https://github.com/webertom6">
+            <img src="./assets/icons/github.svg" alt="GitHub" height="50">
+        </a>
+    </div>
 
-        <section class="featured-projects" aria-labelledby="featured-projects-title">
-            <div class="section-heading">
-                <h2 id="featured-projects-title">Featured Projects</h2>
-                <p>Selected builds demonstrating practical AI, hardware implementation, and real-time system design.</p>
-            </div>
+    <h2 class="courses-title">Top projects</h2>
 
-            <div class="projects-grid">
-                <article class="project-card">
-                    <img src="./assets/images/demo_doom.webp" alt="FPGA raycasting game scene rendered in real time">
-                    <div class="project-card__body">
-                        <h3>Doom-like Raycasting on FPGA</h3>
-                        <p>Hardware-focused real-time rendering pipeline inspired by retro game engines.</p>
-                        <ul>
-                            <li>Custom raycasting architecture for constrained FPGA resources</li>
-                            <li>Compressed image pipeline for ROM optimization</li>
-                            <li>Implemented using VHDL on DE0-Nano (Cyclone IV)</li>
-                        </ul>
-                        <a href="https://github.com/webertom6/doom-like-raycasting-fpga" target="_blank" rel="noopener noreferrer" aria-label="Open Doom-like Raycasting FPGA project on GitHub">View project</a>
-                    </div>
-                </article>
+    <section class="slideshow-container">
+        <div class="slides-wrapper">
+            <div class="slide fade"> 
+                <div class="project-container-fpga-raycast"></div>
+            </div>
+            <div class="slide fade"> 
+                <div class="project-container-cv2"></div>   
+            </div>
+        </div>
 
-                <article class="project-card">
-                    <img src="./assets/images/stickers_color_overlay.png" alt="Chessboard computer vision segmentation overlay">
-                    <div class="project-card__body">
-                        <h3>Chessboard Computer Vision System</h3>
-                        <p>Near real-time detection and classification pipeline for chessboard and piece recognition.</p>
-                        <ul>
-                            <li>Custom-trained YOLO model for robust piece detection</li>
-                            <li>OpenCV post-processing with geometric and morphological filtering</li>
-                            <li>Video-ready workflow for projection, segmentation, and board-state analysis</li>
-                        </ul>
-                        <a href="https://github.com/webertom6/computer-vison-chessboard" target="_blank" rel="noopener noreferrer" aria-label="Open Chessboard Computer Vision project on GitHub">View project</a>
-                    </div>
-                </article>
-            </div>
-        </section>
+        <!-- Navigation buttons -->
+         <!--&#10094; value : arrow ASCII CHARACTER -->
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
 
-        <section class="specialties" aria-labelledby="specialties-title">
-            <div class="section-heading">
-                <h2 id="specialties-title">Specialties</h2>
-            </div>
-            <div class="specialties-grid">
-                <article class="specialty-card">
-                    <h3>AI & Computer Vision</h3>
-                    <p>Applied machine learning pipelines for perception, detection, and scene understanding.</p>
-                </article>
-                <article class="specialty-card">
-                    <h3>Embedded & FPGA Systems</h3>
-                    <p>Performance-aware deployment from algorithm design to low-level hardware realization.</p>
-                </article>
-                <article class="specialty-card">
-                    <h3>Robotics & Signal Processing</h3>
-                    <p>Robust sensing and control pipelines for real-world autonomous behavior.</p>
-                </article>
-            </div>
-        </section>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
     </main>
+
 
     <div id="footer-placeholder"></div>
 
     <script src="./js/main.js"></script>
+    <script src="./js/slideshow.js"></script>
+
+    <script>
+
+        const project_cv2 = {
+                title: "Identification Chessboard Computer Vision",
+                description: "Vision system for chessboard recognition, projection, segmentation and classification of pieces.",
+                link: "https://github.com/webertom6/computer-vison-chessboard",
+                techs_list: ["Near real-time analysis on video", 
+                            "Custom YOLO model trained", 
+                            "Application of computer vision algorithm (Hough, Morphological operation)", 
+                            "Technology used: OpenCV, Python, ultralytics YOLOv11"],
+                image: [
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/stickers_color_overlay.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/stickers_hsv_overlay.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/yolo_hull_cluster.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/warped_seg.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/exclude_white_black_frame.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        {"url": "https://github.com/webertom6/computer-vison-chessboard/blob/main/img_demo/chessboard_cleaning_examples.png?raw=true", 
+                        "alt": "Chessboard Computer Vision"
+                        },
+                        ]
+            };
+
+        const project_fpga_raycast = {
+                title: "Doom-like Raycasting FPGA",
+                description: "FPGA implementation of retro-like FPV (First Person View) game with 2D dynamics but with a 3D rendering using ray casting engine like in the video game Wolfenstein3D.",
+                link: "https://github.com/webertom6/doom-like-raycasting-fpga",
+                techs_list: ["Real time rendering with smooth graphics.", 
+                            "Compressed RBG images for limited ROM.", 
+                            "Technology Used: VHDL, Quartus, DE0-Nano (Cyclone® IV FPGA)."],
+                image: [
+                        {"url": "./assets/images/demo_doom.webp", 
+                        "alt": "Demo doom raycast fpga"
+                        },
+                        {"url": "./assets/images/DE0-Nano_layout_top.webp", 
+                        "alt": "DE0-Nano Layout Top"
+                        },
+                        {"url": "https://github.com/webertom6/doom-raycast-fpga/blob/main/report/table_compression.png?raw=true", 
+                        "alt": "Table Image Compression"
+                        }
+                        ]
+            };
+
+
+        const dict_projects = new Map();
+        dict_projects.set("project-container-cv2", [project_cv2, 2]);
+        dict_projects.set("project-container-fpga-raycast", [project_fpga_raycast, 2]);
+
+
+        const containers = document.querySelectorAll('[class*="project-container"]');
+
+        for (let i = 0; i < containers.length; i++) {
+            if (dict_projects.has(containers[i].className)) {
+                const [project_data, card_type] = dict_projects.get(containers[i].className);
+                let project_card_html = ``;
+                if (card_type === 1) {
+                    project_card_html = createProjectCard1(project_data);
+                } 
+                else if (card_type === 2) {
+                    project_card_html = createProjectCard2(project_data);
+                }
+                else {
+                    console.warn(`Unknown card type for container with class: ${containers[i].className}`);
+                }
+                containers[i].innerHTML = project_card_html;
+            } else {
+                console.warn(`No project data found for container with class: ${containers[i].className}`);
+            }
+
+        }
+
+    </script>
 </body>
 </html>
