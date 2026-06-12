@@ -11,9 +11,21 @@ body {
     /* display is used to create a flex container 1D layout */
     display: flex;
     flex-direction: column;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Inter', 'Nunito', system-ui, -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
     color: #1a2433;
     background: #f5f5f5;
+}
+
+h1, h2, h3 {
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1.02rem;
+    line-height: 1.7;
 }
 
 main {
